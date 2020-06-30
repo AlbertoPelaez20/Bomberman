@@ -8,6 +8,9 @@
     mapa=_mapa;
    Nuevo = new CEscenario(mapa);
    Bomberman =new CBomberman(mapa,0,0);
+     Crearmapa();
+
+     Bomberman->dibujarBomberman();
 
 }
 
@@ -17,14 +20,25 @@ void CControlmapa ::  Crearmapa()
  Nuevo->PintarMapa();
  Nuevo->Pintarpiso();
  Nuevo->Pintarobstaculo();
- Bomberman->dibujarBomberman();
+ //Bomberman->dibujarBomberman();
+
+}
+
+void CControlmapa :: Mostrarmapa()
+{
 
 }
 
 
+
 void CControlmapa ::moverbomber()
 {
-   Bomberman->moverBomberman();
+
+
+     //Bomberman->dibujarBomberman();
+
+    Nuevo->mostrar();
+    Bomberman->moverBomberman();
 
 }
 

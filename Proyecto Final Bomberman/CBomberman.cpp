@@ -28,23 +28,33 @@ CBomberman ::CBomberman(RenderWindow *_mapa, int x, int y)
 
 void CBomberman ::  dibujarBomberman(   )
 {
+    x=52;
+    y=44;
     Bomber.loadFromFile("C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/imagen/Jugador.png");
     Sprite sprite(Bomber);
-    this->sprite=sprite;
     sprite.scale(2.8,2.8);
+    this->sprite=sprite;
     sprite.move(52, 44);
     sprite.setTextureRect(IntRect(0, 52, 17, 26));
     sprite.setOrigin(0,0);
     mapa->draw(sprite);
     x += dx;
     y += dy;
+
+
 }
 
 void CBomberman ::  moverBomberman(  ) {
 
 
-    sprite.scale(2.8,2.8);
-    sprite.move(80, 50);
+    //sprite.setOrigin(x,0);
+    //sprite.scale(2.8,2.8);
+    sprite.setTextureRect(IntRect(0, 52, 17, 26));
+    sprite.move(x++, y);
+
+    //mapa->display();
+
+
     mapa->draw(sprite);
 
 

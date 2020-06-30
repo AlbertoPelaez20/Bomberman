@@ -6,7 +6,13 @@
 CEscenario :: CEscenario() {
 
     matriz = new int *[filas];
-    for (int i = 0; i < filas; i++) { matriz[i] = new int[columnas]; }
+    for (int i = 0; i < filas; i++) { matriz[i] = new int[columnas];
+        void generarmapa();
+        void imprimir();
+        void PintarMapa();
+        void Pintarpiso();
+        void Pintarobstaculo();
+    }
 }
 
 
@@ -101,6 +107,15 @@ void  CEscenario :: Pintarpiso()
     }
 
 }
+
+void  CEscenario :: mostrar()
+{
+
+     PintarMapa();
+     Pintarpiso();
+     Pintarobstaculo();
+}
+
 
 void CEscenario :: Pintarobstaculo()
 {

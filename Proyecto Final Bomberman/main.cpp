@@ -5,31 +5,41 @@
 
 int main() {
 
-    RenderWindow window(VideoMode(850,670),"BOMBERMAN 4");
+    RenderWindow window(VideoMode(850,645),"BOMBERMAN 4");
     Music music;
     music.openFromFile("C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/Audio/ModoSolitario.wav");
     music.play();
     CControlmapa mapa(&window);
-    mapa.Crearmapa();
+    CEscenario map;
+    /*map.generarmapa();
+    map.Pintarpiso();
+    map.PintarMapa();
+    map.Pintarobstaculo();
+    /*map.mostrar();*/
+    //window.display();
+    //mapa.Crearmapa();
+    //window.display();
+    //window.display();
+    //mapa.moverbomber();
     //CBomberman a(&window,0,0);
     //a.dibujarBomberman();
     //mapa.moverbomber();
     window.display();
     window.setFramerateLimit(60);
-/*
+
     while (window.isOpen()) {
 
         // Process events
         Event event;
 
         while (window.pollEvent(event)) {
-
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+           window.clear();
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
             {
-
-                  mapa.moverbomber();
+                mapa;
+                mapa.moverbomber();
+                //map.mostrar();
                 window.display();
-
 
             }
             // Close window: exit

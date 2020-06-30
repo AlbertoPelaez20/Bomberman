@@ -16,6 +16,7 @@ private :
     Texture piso;
     Texture obstaculo;
 
+
 public :
 
     CEscenario();
@@ -23,11 +24,13 @@ public :
     ~CEscenario(){};
 
     void setMapa(RenderWindow * mapa1);
+    void mostrar();
     void generarmapa();
     void imprimir();
     void PintarMapa();
     void Pintarpiso();
     void Pintarobstaculo();
+
 };
 
 #endif //PROYECTO_FINAL_BOMBERMAN_CESCENARIO_H
