@@ -34,14 +34,24 @@ int main() {
 
         while (window.pollEvent(event)) {
            window.clear();
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+            if (Keyboard::isKeyPressed(Keyboard::Right))
             {
-                mapa;
+                //mapa;
                 mapa.moverbomber();
                 //map.mostrar();
                 window.display();
 
             }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+            {
+                //mapa;
+                mapa.moverbomber();
+                //map.mostrar();
+                window.display();
+
+            }
+
             // Close window: exit
             if (event.type == sf::Event::Closed)
                 window.close();

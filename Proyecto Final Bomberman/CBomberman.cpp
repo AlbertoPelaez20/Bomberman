@@ -33,31 +33,21 @@ void CBomberman ::  dibujarBomberman(   )
     Bomber.loadFromFile("C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/imagen/Jugador.png");
     Sprite sprite(Bomber);
     sprite.scale(2.8,2.8);
-    this->sprite=sprite;
+    //this->sprite=sprite;
     sprite.move(52, 44);
     sprite.setTextureRect(IntRect(0, 52, 17, 26));
     sprite.setOrigin(0,0);
+    this->sprite=sprite;
     mapa->draw(sprite);
-    x += dx;
-    y += dy;
+
 
 
 }
 
 void CBomberman ::  moverBomberman(  ) {
 
-
-    //sprite.setOrigin(x,0);
-    //sprite.scale(2.8,2.8);
-    sprite.setTextureRect(IntRect(0, 52, 17, 26));
-    sprite.move(x++, y);
-
-    //mapa->display();
-
-
+    sprite.move(+10, 0);
     mapa->draw(sprite);
-
-
 
 }
 
