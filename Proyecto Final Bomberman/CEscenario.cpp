@@ -62,7 +62,7 @@ void CEscenario :: PintarMapa()
     bloque.loadFromFile("C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/imagen/bmpSolido.png");
     Sprite sprite(bloque);
     sprite.setOrigin(0,0);
-    sprite.scale(0.8,0.8);
+    sprite.scale(0.8,0.81);
    int x=0,y=0;
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
@@ -122,7 +122,7 @@ void CEscenario :: Pintarobstaculo()
     obstaculo.loadFromFile("C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/imagen/bmpDestruible.png");
     Sprite sprite(obstaculo);
     sprite.setOrigin(0,0);
-    sprite.scale(0.8,0.8);
+    sprite.scale(0.8,0.81);
     int x=0,y=0;
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {

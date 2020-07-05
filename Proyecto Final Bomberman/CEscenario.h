@@ -11,14 +11,15 @@ private :
     RenderWindow *mapa;
     int filas = 15;
     int columnas = 17;
-    int **matriz;
+
     Texture bloque;
     Texture piso;
     Texture obstaculo;
-
+    int xocupado;
+    int yocupado;
 
 public :
-
+    int **matriz;
     CEscenario();
     CEscenario(RenderWindow *_mapa);
     ~CEscenario(){};

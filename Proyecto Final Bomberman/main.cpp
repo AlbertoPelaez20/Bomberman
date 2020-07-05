@@ -11,21 +11,8 @@ int main() {
     music.play();
     CControlmapa mapa(&window);
     CEscenario map;
-    /*map.generarmapa();
-    map.Pintarpiso();
-    map.PintarMapa();
-    map.Pintarobstaculo();
-    /*map.mostrar();*/
-    //window.display();
-    //mapa.Crearmapa();
-    //window.display();
-    //window.display();
-    //mapa.moverbomber();
-    //CBomberman a(&window,0,0);
-    //a.dibujarBomberman();
-    //mapa.moverbomber();
     window.display();
-    window.setFramerateLimit(60);
+    //window.setFramerateLimit(60);
 
     while (window.isOpen()) {
 
@@ -34,22 +21,50 @@ int main() {
 
         while (window.pollEvent(event)) {
            window.clear();
+
             if (Keyboard::isKeyPressed(Keyboard::Right))
             {
-                //mapa;
-                mapa.moverbomber();
-                //map.mostrar();
+
+                 mapa.moverbomberDerecha();
+
+
                 window.display();
+
+               // cout<<"posicion x ="<<mapa.getPosx()<<endl;
+
 
             }
 
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+            if (sf::Keyboard::isKeyPressed(Keyboard::Left))
             {
-                //mapa;
-                mapa.moverbomber();
+
+                mapa.moverbomberIzquierda();
+                //map.mostrar();
+                 window.display();
+
+                //cout<<"posicion x = "<<mapa.getPosx()<<endl;
+
+
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+            {
+
+                mapa.moverbomberArriba();
+                //map.mostrar();
+                window.display();
+                //cout<<"posicion y : "<<mapa.getPosy()<<endl;
+
+            }
+
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+            {
+
+                mapa.moverbomberAbajo();
                 //map.mostrar();
                 window.display();
 
+               // cout<<"posicion y : "<<mapa.getPosy()<<endl;
             }
 
             // Close window: exit

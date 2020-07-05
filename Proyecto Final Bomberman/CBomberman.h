@@ -15,10 +15,10 @@ class CBomberman {
 private:
     RenderWindow *mapa;
     Texture Bomber;
-    Sprite sprite;
+
+
     void   eventos();
-    int x=0;
-    int y=0;
+
     int dx;
     int dy;
     int alto;
@@ -28,12 +28,26 @@ private:
 
 
 
+
 public:
+    int x;
+    int y;
+    Sprite sprite;
+    RectangleShape rectangle;
+    RectangleShape rectangleA;
   CBomberman( RenderWindow *_mapa, int x, int y);//posicion inicial;
  ~CBomberman(){};
   void dibujarBomberman();
-  void moverBomberman( );
+  void moverBombermanDerecha( );
+    void moverBombermanIzquierda( );
+    void moverBombermaArriba();
+    void moverBombermanAbajo();
   //void mandosmanuales (Keyboard::Key key);
+  void setPosx(int x){ this->x=x;}
+  int getPosx(){return x;}
+  int getPosy(){return y;}
+
+   void setcerodx();
 
 };
 
