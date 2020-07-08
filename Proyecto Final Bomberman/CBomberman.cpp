@@ -17,6 +17,7 @@ CBomberman ::CBomberman(RenderWindow *_mapa, int x, int y)
      indicex=0;
      indicey=0;
 
+
    /*
     Sprite sprite(Bomber);
     sprite.scale(2.8,2.8);
@@ -26,6 +27,81 @@ CBomberman ::CBomberman(RenderWindow *_mapa, int x, int y)
     mapa->draw(sprite);
 */
 }
+
+
+
+bool CBomberman :: validarmovimientovertical()
+{
+
+    int X=0 , Y=0 ;
+
+    for (int i = 0; i < 15; i++) {
+        for (int j = 0; j < 17; j++) {
+            X += 50;
+
+            if ( mapalocal[i][j] == 1 || mapalocal[i][j]== 3  ) {
+                //C.setPosition(X-50, Y);
+                //mapa->draw(C);
+                IntRect r1(X-50, Y, 50, 40);
+                //IntRect r2 (Bomberman->rectangle.getPosition().x, Bomberman->rectangle.getPosition().y,40,25);
+                IntRect r3 (rectangleA.getPosition().x,rectangleA.getPosition().y,40,25);
+                IntRect result;
+                IntRect result2;
+
+                //  bool a = r1.intersects(r2,result);
+                bool b= r1.intersects(r3,result2);
+                if( b== true  ){ return false;        }
+                else return true;
+
+
+
+
+            }
+        } X=0;
+        Y += 43;
+    }
+
+
+}
+
+
+bool CBomberman ::validarmovimientohorizontal()  {
+
+
+    int X=0 , Y=0 ;
+
+    for (int i = 0; i < 15; i++) {
+        for (int j = 0; j < 17; j++) {
+            X += 50;
+
+
+            if ( mapalocal[i][j] == 1 || mapalocal[i][j]== 3 ) {
+                //C.setPosition(X-50, Y);
+                // mapa->draw(C);
+                IntRect r1(X-50, Y, 50, 40);
+                IntRect r2 (rectangle.getPosition().x, rectangle.getPosition().y,40,25);
+                //IntRect r3 (Bomberman->rectangleA.getPosition().x,Bomberman->rectangleA.getPosition().y,40,25);
+                IntRect result;
+               // IntRect result2;
+
+                bool a = r1.intersects(r2,result);
+                // bool b= r1.intersects(r3,result2);
+                if( a== true ){
+                    return false;
+
+
+                } else true;
+
+
+
+
+            }
+        } X=0;
+        Y += 43;
+    }
+}
+
+
 
 void CBomberman ::  dibujarBomberman(   )
 {
@@ -81,7 +157,11 @@ void CBomberman ::  moverBombermanDerecha(  ) {
 
             } else
                 dx = 17;
-            sprite.move(+10, 0);
+
+
+        avanzeh=+10;
+
+            sprite.move(avanzeh, 0);
             sprite.setTextureRect(IntRect(dx, 25, 17, 26));
             rectangle.setPosition(x+5,y+52);
             //rectangleA.setPosition(x+5,y+25);
@@ -112,7 +192,10 @@ void CBomberman ::  moverBombermanIzquierda(  ) {
             dx += 19;
 
         } else dx =0;
-        sprite.move(-10, 0);
+         avanzeh=-10;
+
+
+        sprite.move(avanzeh, 0);
         //rectangle.setPosition(x-6,y+52);
         rectangle.setPosition(x+5,y+52);
         //mapa->draw(rectangle);

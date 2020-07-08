@@ -8,11 +8,11 @@ int main() {
     RenderWindow window(VideoMode(850,645),"BOMBERMAN 4");
     Music music;
     music.openFromFile("C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/Audio/ModoSolitario.wav");
-    music.play();
+    //music.play();
     CControlmapa mapa(&window);
     CEscenario map;
     window.display();
-    //window.setFramerateLimit(60);
+    window.setFramerateLimit(60);
 
     while (window.isOpen()) {
 

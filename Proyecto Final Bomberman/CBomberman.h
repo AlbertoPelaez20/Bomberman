@@ -17,7 +17,7 @@ private:
     Texture Bomber;
 
 
-    void   eventos();
+   //void   eventos();
 
     int dx;
     int dy;
@@ -30,8 +30,11 @@ private:
 
 
 public:
+    int **mapalocal;
     int x;
     int y;
+    int avanzeh=0;
+    int avanzev=0;
     Sprite sprite;
     RectangleShape rectangle;
     RectangleShape rectangleA;
@@ -46,6 +49,8 @@ public:
   void setPosx(int x){ this->x=x;}
   int getPosx(){return x;}
   int getPosy(){return y;}
+ bool validarmovimientovertical();
+   bool validarmovimientohorizontal();
 
    void setcerodx();
 

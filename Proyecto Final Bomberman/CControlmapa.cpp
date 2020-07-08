@@ -128,7 +128,7 @@ void CControlmapa ::moverbomberDerecha()
 {
      if (val==false)
      {
-         Bomberman->rectangle.setPosition(Bomberman->x+15,Bomberman->y+52);
+         Bomberman->rectangle.setPosition(Bomberman->x+15,Bomberman->y+42);
 
          val=true;
      }
@@ -152,7 +152,7 @@ void CControlmapa :: moverbomberArriba() {
     {
 
 
-        Bomberman->rectangleA.setPosition(Bomberman->x+5,Bomberman->y+35);
+        Bomberman->rectangleA.setPosition(Bomberman->x+5,Bomberman->y+45);
 
         val=true;
     }
@@ -160,7 +160,7 @@ void CControlmapa :: moverbomberArriba() {
     Nuevo->mostrar();
 
     validarmovimientovertical();
-    if ( val || 4 == Bomberman->x )  Bomberman->moverBombermaArriba();
+    if ( val || 4 <= Bomberman->x )  Bomberman->moverBombermaArriba();
     mapa->draw(Bomberman->sprite);
    // mapa->draw(Bomberman->rectangleA);
 }
@@ -172,8 +172,9 @@ void CControlmapa ::moverbomberIzquierda()
 
     if (val==false)
     {
-        Bomberman->rectangle.setPosition(Bomberman->x-10,Bomberman->y+52);
+        Bomberman->rectangle.setPosition(Bomberman->x-10,Bomberman->y+42);
         val=true;
+
     }
 
     Nuevo->mostrar();
@@ -193,7 +194,7 @@ void CControlmapa :: moverbomberAbajo()
     {
 
 
-        Bomberman->rectangleA.setPosition(Bomberman->x+5,Bomberman->y+55);
+        Bomberman->rectangleA.setPosition(Bomberman->x+12,Bomberman->y+65);
 
         val=true;
     }
@@ -204,6 +205,7 @@ void CControlmapa :: moverbomberAbajo()
 
     if ( val || 4 == Bomberman->x ) Bomberman->moverBombermanAbajo();
     mapa->draw(Bomberman->sprite);
+
    // mapa->draw(Bomberman->rectangleA);
 
 
