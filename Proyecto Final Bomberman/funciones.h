@@ -6,6 +6,8 @@
 #define PROYECTO_FINAL_BOMBERMAN_FUNCIONES_H
 
 #include <iostream>
+#include <chrono>
+#include <thread>
 #include <ctime>
 #include <stdlib.h>
 #include <SFML/Graphics.hpp>

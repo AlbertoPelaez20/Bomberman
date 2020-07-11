@@ -122,6 +122,33 @@ Proyecto_Final_Bomberman/fast:
 	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/build
 .PHONY : Proyecto_Final_Bomberman/fast
 
+CBomba.obj: CBomba.cpp.obj
+
+.PHONY : CBomba.obj
+
+# target to build an object file
+CBomba.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.obj
+.PHONY : CBomba.cpp.obj
+
+CBomba.i: CBomba.cpp.i
+
+.PHONY : CBomba.i
+
+# target to preprocess a source file
+CBomba.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.i
+.PHONY : CBomba.cpp.i
+
+CBomba.s: CBomba.cpp.s
+
+.PHONY : CBomba.s
+
+# target to generate assembly for a file
+CBomba.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.s
+.PHONY : CBomba.cpp.s
+
 CBomberman.obj: CBomberman.cpp.obj
 
 .PHONY : CBomberman.obj
@@ -239,6 +266,9 @@ help:
 	@echo ... Proyecto_Final_Bomberman
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... CBomba.obj
+	@echo ... CBomba.i
+	@echo ... CBomba.s
 	@echo ... CBomberman.obj
 	@echo ... CBomberman.i
 	@echo ... CBomberman.s

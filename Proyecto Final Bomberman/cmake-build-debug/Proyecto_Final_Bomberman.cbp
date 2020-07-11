@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.cpp">
+			<Option target="Proyecto_Final_Bomberman"/>
+		</Unit>
+		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.h">
+			<Option target="Proyecto_Final_Bomberman"/>
+		</Unit>
 		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.cpp">
 			<Option target="Proyecto_Final_Bomberman"/>
 		</Unit>

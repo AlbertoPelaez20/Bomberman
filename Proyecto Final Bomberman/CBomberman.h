@@ -6,53 +6,48 @@
 #define PROYECTO_FINAL_BOMBERMAN_CBOMBERMAN_H
 
 #include "CEscenario.h"
-#include <iostream>
-
-
-
+#include"funciones.h"
+#include"CBomba.h"
 class CBomberman {
-
 private:
     RenderWindow *mapa;
     Texture Bomber;
-
-
-   //void   eventos();
-
-    int dx;
-    int dy;
     int alto;
     int ancho;
     int indicex;
     int indicey;
-
-
-
+    RectangleShape C;
+    CBomba *bomba1;
 
 public:
-    int **mapalocal;
+    bool validar;
+    int dx;
+    int dy;
+    int **mapabomberman;
     int x;
     int y;
-    int avanzeh=0;
-    int avanzev=0;
     Sprite sprite;
     RectangleShape rectangle;
     RectangleShape rectangleA;
-  CBomberman( RenderWindow *_mapa, int x, int y);//posicion inicial;
- ~CBomberman(){};
+    Sprite Bomba;
+  CBomberman( RenderWindow *_mapa, int x, int y,int **&matriz);//posicion inicial;
+  ~CBomberman(){};
   void dibujarBomberman();
   void moverBombermanDerecha( );
     void moverBombermanIzquierda( );
     void moverBombermaArriba();
     void moverBombermanAbajo();
-  //void mandosmanuales (Keyboard::Key key);
   void setPosx(int x){ this->x=x;}
   int getPosx(){return x;}
   int getPosy(){return y;}
- bool validarmovimientovertical();
-   bool validarmovimientohorizontal();
-
+  bool validarmovimientovertical();
+   void validarmovimientohorizontal();
    void setcerodx();
+   void hacermatriz();
+   void ponerbomba();
+    void  tiempo1();
+
+
 
 };
 
