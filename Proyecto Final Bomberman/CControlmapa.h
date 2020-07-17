@@ -13,10 +13,11 @@ class CControlmapa {
 private:
     RenderWindow *mapa;
     int **mapalocal;
+
+public:
     CEscenario *Nuevo;
     CBomberman *Bomberman;
     RectangleShape   C;
-public:
     bool val;
     CControlmapa(RenderWindow *_mapa);
     ~CControlmapa(){};

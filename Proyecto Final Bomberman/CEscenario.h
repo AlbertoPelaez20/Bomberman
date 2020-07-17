@@ -13,9 +13,10 @@ private :
     Texture bloque;
     Texture piso;
     Texture obstaculo;
+
+public :
     int xocupado;
     int yocupado;
-public :
     int **matriz;
     CEscenario();
     CEscenario(RenderWindow *_mapa);
@@ -27,5 +28,7 @@ public :
     void PintarMapa();
     void Pintarpiso();
     void Pintarobstaculo();
+    void actualizarpantalla(int a, int b );
+
 };
 #endif //PROYECTO_FINAL_BOMBERMAN_CESCENARIO_H

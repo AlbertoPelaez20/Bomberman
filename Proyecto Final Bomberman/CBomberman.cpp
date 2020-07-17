@@ -106,7 +106,7 @@ bool CBomberman :: validarmovimientovertical()
     }
 void CBomberman ::  moverBombermanIzquierda(  ) {
     validar=true;
-    rectangle.setPosition(sprite.getPosition().x-2,sprite.getPosition().y+52);
+    rectangle.setPosition(sprite.getPosition().x-5,sprite.getPosition().y+52);
         if (dx < 34) {
             dx += 19;
         } else dx =0;
@@ -138,7 +138,7 @@ void CBomberman :: setcerodx() {
 }
 void CBomberman ::moverBombermanAbajo() {
     validar=true;
-    rectangleA.setPosition(sprite.getPosition().x+8,sprite.getPosition().y+62);
+    rectangleA.setPosition(sprite.getPosition().x+8,sprite.getPosition().y+65);
      if (dy <= 34) {
         dy += 25;
     } else dy = 25;
@@ -158,11 +158,44 @@ void CBomberman ::ponerbomba()
     this->Bomba=bomba1->sprite;
     //mapa->draw(bomba1->sprite);
     mapa->draw(Bomba);
+    mapa->draw(bomba1->rectanguloexplosion);
 
+}
+
+void CBomberman ::validarpared()
+{
+    int X = 0;
+    int Y = 0;
+    for (int i = 0; i < 15; i++) {
+        for (int j = 0; j < 17; j++) {
+            X += 50;
+            if ( mapabomberman[i][j] == 3) {
+                 C.setPosition(X - 50, Y);
+                mapa->draw(C);
+                IntRect r1(X-50, Y, 50, 40);
+                IntRect r3 (rectangleA.getPosition().x,rectangleA.getPosition().y,40,25);
+                IntRect result;
+                IntRect result2;
+                bool b= r1.intersects(r3,result);
+                if (b==true)  validar =false;
+            }
+        } X = 0;
+        Y += 43;
+    }
 }
 
 void CBomberman :: tiempo1()
         {
 
-       bomba1->estado_normal();
+
+            bomba1->estado_normal();
+            this->Bomba=bomba1->sprite;
+            mapa->draw(Bomba);
+
         }
+
+void CBomberman :: destruirBomba()
+{
+
+
+}

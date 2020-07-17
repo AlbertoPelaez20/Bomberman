@@ -17,9 +17,10 @@ private:
     int indicex;
     int indicey;
     RectangleShape C;
-    CBomba *bomba1;
+
 
 public:
+    CBomba *bomba1;
     bool validar;
     int dx;
     int dy;
@@ -45,7 +46,9 @@ public:
    void setcerodx();
    void hacermatriz();
    void ponerbomba();
+   void validarpared();
     void  tiempo1();
+    void destruirBomba();
 
 
 

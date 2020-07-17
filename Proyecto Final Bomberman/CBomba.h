@@ -11,23 +11,30 @@ class CBomba {
 private:
     RenderWindow *mapa;
     Texture Bomba;
+    Texture Explosion;
     int indicex;
     int ancho;
     int tiempoexplosion;
-    int x;
-    int y;
+
     int **mapabomba;
+    int dx;
 
 public:
+    int x;
+    int y;
     CBomba();
     CBomba(RenderWindow *_mapa, int x, int y,int **&matriz);
-    ~CBomba();
+    ~CBomba(){};
     void dibujarbomba();
     void estado_normal();
     void estado_explosion();
     void estado_desaparicion();
     bool validaposicion();
     Sprite sprite;
+    Sprite explosion;
+    RectangleShape rectanguloexplosion;
+
+
 };
 
 

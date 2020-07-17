@@ -31,55 +31,41 @@ void CControlmapa ::  Crearmapa()
      Nuevo->mostrar();
      mapa->draw(Bomberman->Bomba);
      Bomberman->moverBombermanDerecha();
-     cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
+     //cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
     }
 void CControlmapa :: moverbomberArriba() {
     Nuevo->mostrar();
     mapa->draw(Bomberman->Bomba);
     Bomberman->moverBombermaArriba();
-    cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
+    //cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
 }
 void CControlmapa ::moverbomberIzquierda()
 {
     Nuevo->mostrar();
     mapa->draw(Bomberman->Bomba);
    Bomberman->moverBombermanIzquierda();
-    cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
+   // cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
 }
 void CControlmapa :: moverbomberAbajo()
 {
     Nuevo->mostrar();
     mapa->draw(Bomberman->Bomba);
          Bomberman->moverBombermanAbajo();
-    cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
+    //cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
 }
 void CControlmapa ::timer()
 {
 
 }
-
 void CControlmapa :: tiempobomba1()
 {   Nuevo->mostrar();
     mapa->draw(Bomberman->sprite);
-
     Bomberman->tiempo1();
-    mapa->draw(Bomberman->Bomba);
-
-
+    //mapa->draw(Bomberman->Bomba);
 }
 void CControlmapa :: crearbomba()
 {
     Nuevo->mostrar();
     mapa->draw(Bomberman->sprite);
     Bomberman->ponerbomba();
-    int tiempo=0;
-    do
-    {
-        cout<<"tiempo "<<tiempo<<endl;
-       mapa->draw(Bomberman->Bomba);
-       tiempo++;
-
-    }while(tiempo<=300);
-
-
 }

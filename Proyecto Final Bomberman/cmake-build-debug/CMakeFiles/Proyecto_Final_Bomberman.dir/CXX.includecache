@@ -850,19 +850,9 @@ SFML/Audio/SoundSource.hpp
 SFML/Audio/SoundStream.hpp
 -
 
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.cpp
-CBomba.h
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.h
-
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.h
 funciones.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/funciones.h
-
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.cpp
-CBomberman.h
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.h
-CBomberman.h
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.h
 
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.h
 CEscenario.h
@@ -872,19 +862,11 @@ C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/funciones.h
 CBomba.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.h
 
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CControlmapa.cpp
-CControlmapa.h
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CControlmapa.h
-
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CControlmapa.h
 CEscenario.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.h
 CBomberman.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.h
-
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.cpp
-CEscenario.h
-C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.h
 
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.h
 funciones.h
@@ -919,4 +901,6 @@ CControlmapa.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CControlmapa.h
 CBomberman.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.h
+CBomba.h
+C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.h
 
