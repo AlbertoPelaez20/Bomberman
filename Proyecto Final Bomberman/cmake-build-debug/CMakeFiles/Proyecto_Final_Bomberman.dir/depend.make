@@ -191,6 +191,7 @@ CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj: ../CBomba.h
 CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj: ../CBomberman.cpp
 CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj: ../CBomberman.h
 CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj: ../CEscenario.h
+CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj: ../CPersonajes.h
 CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj: ../funciones.h
 
 CMakeFiles/Proyecto_Final_Bomberman.dir/CControlmapa.cpp.obj: C:/Program\ Files\ (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/mingw32/include/SFML/Audio/AlResource.hpp

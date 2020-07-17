@@ -20,7 +20,7 @@ public :
     int **matriz;
     CEscenario();
     CEscenario(RenderWindow *_mapa);
-    ~CEscenario(){};
+    ~CEscenario();
     void setMapa(RenderWindow * mapa1);
     void mostrar();
     void generarmapa();

@@ -21,12 +21,17 @@ int main() {
     t2 = seconds(0.01f);
     t3 = seconds(0.01f);
     RenderWindow window(VideoMode(850, 645), "BOMBERMAN 4");
+    
+
     Music music;
     music.openFromFile("C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/Audio/ModoSolitario.wav");
     music.play();
-    CControlmapa mapa(&window);
 
-//
+
+
+    CControlmapa mapa(&window);
+    window.setFramerateLimit(60);
+
    // mapa.Nuevo->imprimir();
     CEscenario map;
     window.display();

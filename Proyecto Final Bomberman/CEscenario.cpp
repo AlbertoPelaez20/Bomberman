@@ -16,6 +16,18 @@ CEscenario :: CEscenario() {
     }
 }
 
+CEscenario :: ~CEscenario()
+{
+    delete matriz;
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++)
+        {
+            delete matriz[i];
+        }
+    }
+
+}
+
 
  CEscenario :: CEscenario(RenderWindow *_mapa) {
      mapa=_mapa;

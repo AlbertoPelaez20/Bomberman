@@ -23,7 +23,7 @@ public:
     RectangleShape   C;
     bool val;
     CControlmapa(RenderWindow *_mapa);
-    ~CControlmapa(){};
+    ~CControlmapa();
     void Crearmapa();
     void moverbomberDerecha();
     void moverbomberIzquierda();

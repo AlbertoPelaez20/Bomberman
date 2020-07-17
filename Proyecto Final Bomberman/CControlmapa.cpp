@@ -85,6 +85,21 @@ void CControlmapa :: muestra_enemigos()
 {
     Nuevo->mostrar();
     mapa->draw(Enemigo->sprite);
+}
+
+CControlmapa:: ~CControlmapa()
+{
+    delete Nuevo;
+    delete Bomberman;
+    delete Enemigo;
+    delete mapalocal;
+
+    for (int i = 0; i < 15; i++) {
+        for (int j = 0; j < 17; j++)
+        {
+            delete mapalocal[i];
+        }
+    }
 
 
 }

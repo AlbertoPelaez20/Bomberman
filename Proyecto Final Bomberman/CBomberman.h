@@ -8,9 +8,11 @@
 #include "CEscenario.h"
 #include"funciones.h"
 #include"CBomba.h"
+#include "CPersonajes.h"
 
 
-class CBomberman  {
+
+class CBomberman : public CPersonajes   {
 private:
     RenderWindow *mapa;
     Texture Bomber;
@@ -42,16 +44,16 @@ public:
 
 
 
-   void dibujarBomberman();
-  void moverBombermanDerecha( );
-   void moverBombermanIzquierda( );
-   void moverBombermaArriba();
- void moverBombermanAbajo();
+   void dibujarBomberman()override ;
+  void moverBombermanDerecha( )override ;
+   void moverBombermanIzquierda( )override ;
+   void moverBombermaArriba()override ;
+ void moverBombermanAbajo()override ;
   void setPosx(int x){ this->x=x;}
   int getPosx(){return x;}
   int getPosy(){return y;}
-   bool validarmovimientovertical();
-  void validarmovimientohorizontal();
+   bool validarmovimientovertical()override ;
+  void validarmovimientohorizontal()override ;
   void setcerodx();
   void hacermatriz();
   void ponerbomba();
