@@ -100,10 +100,22 @@
 		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CControlmapa.h">
 			<Option target="Proyecto_Final_Bomberman"/>
 		</Unit>
+		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEnemigos.cpp">
+			<Option target="Proyecto_Final_Bomberman"/>
+		</Unit>
+		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEnemigos.h">
+			<Option target="Proyecto_Final_Bomberman"/>
+		</Unit>
 		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.cpp">
 			<Option target="Proyecto_Final_Bomberman"/>
 		</Unit>
 		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.h">
+			<Option target="Proyecto_Final_Bomberman"/>
+		</Unit>
+		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CPersonajes.cpp">
+			<Option target="Proyecto_Final_Bomberman"/>
+		</Unit>
+		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CPersonajes.h">
 			<Option target="Proyecto_Final_Bomberman"/>
 		</Unit>
 		<Unit filename="C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/funciones.h">

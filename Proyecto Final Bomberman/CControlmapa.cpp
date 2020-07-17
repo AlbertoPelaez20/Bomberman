@@ -4,14 +4,18 @@
 
 #include "CControlmapa.h"
 
+
  CControlmapa :: CControlmapa (RenderWindow *_mapa)  {
-    mapa=_mapa;
-   Nuevo = new CEscenario(mapa);
-   Bomberman =new CBomberman(mapa,0,0,Nuevo->matriz);
+     mapa=_mapa;
+     Nuevo =  new CEscenario(mapa);
+     Bomberman = new CBomberman(mapa,0,0,Nuevo->matriz);
+     Enemigo= new CEnemigos(mapa,Nuevo->matriz,0,0);
      Crearmapa();
      mapalocal=Nuevo->matriz;
      Bomberman->dibujarBomberman();
      C.setSize(Vector2f(50, 40));
+     Enemigo->dibujarBomberman();
+
     }
 
 
@@ -29,12 +33,14 @@ void CControlmapa ::  Crearmapa()
  void CControlmapa ::moverbomberDerecha()
 {
      Nuevo->mostrar();
+     mapa->draw(Enemigo->sprite);
      mapa->draw(Bomberman->Bomba);
      Bomberman->moverBombermanDerecha();
      //cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
     }
 void CControlmapa :: moverbomberArriba() {
     Nuevo->mostrar();
+    mapa->draw(Enemigo->sprite);
     mapa->draw(Bomberman->Bomba);
     Bomberman->moverBombermaArriba();
     //cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
@@ -42,13 +48,17 @@ void CControlmapa :: moverbomberArriba() {
 void CControlmapa ::moverbomberIzquierda()
 {
     Nuevo->mostrar();
+    mapa->draw(Enemigo->sprite);
     mapa->draw(Bomberman->Bomba);
-   Bomberman->moverBombermanIzquierda();
+    //mapa->draw(Enemigo->sprite);
+    Bomberman->moverBombermanIzquierda();
+
    // cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
 }
 void CControlmapa :: moverbomberAbajo()
 {
     Nuevo->mostrar();
+    mapa->draw(Enemigo->sprite);
     mapa->draw(Bomberman->Bomba);
          Bomberman->moverBombermanAbajo();
     //cout<<"posicion x : "<<Bomberman->getPosx()<<" posicion y : "<<Bomberman->getPosy()<<endl;
@@ -66,6 +76,15 @@ void CControlmapa :: tiempobomba1()
 void CControlmapa :: crearbomba()
 {
     Nuevo->mostrar();
+
     mapa->draw(Bomberman->sprite);
     Bomberman->ponerbomba();
+}
+
+void CControlmapa :: muestra_enemigos()
+{
+    Nuevo->mostrar();
+    mapa->draw(Enemigo->sprite);
+
+
 }

@@ -7,8 +7,10 @@
 
 #include "CEscenario.h"
 #include "CBomberman.h"
+#include "CEnemigos.h"
 
-class CControlmapa {
+
+class CControlmapa  {
 
 private:
     RenderWindow *mapa;
@@ -16,6 +18,7 @@ private:
 
 public:
     CEscenario *Nuevo;
+    CEnemigos *Enemigo;
     CBomberman *Bomberman;
     RectangleShape   C;
     bool val;
@@ -32,6 +35,7 @@ public:
     void timer();
     void crearbomba();
     void tiempobomba1();
+    void muestra_enemigos();
 
 };
 

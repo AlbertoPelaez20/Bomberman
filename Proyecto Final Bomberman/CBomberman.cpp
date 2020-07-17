@@ -1,11 +1,15 @@
 #include "CBomberman.h"
+
 //
 // Created by Zero on 28/06/2020.
 //
-#include "CBomberman.h"
-CBomberman ::CBomberman(RenderWindow *_mapa, int x, int y,int **&matriz)
+
+
+
+CBomberman ::CBomberman(RenderWindow *_mapa, int x, int y,int **&matriz )
+
 {
-    mapa=_mapa;
+     mapa=_mapa;
      this->x=x;
      this->y=y;
      dx=0;

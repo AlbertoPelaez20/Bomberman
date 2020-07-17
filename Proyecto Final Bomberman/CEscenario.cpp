@@ -12,6 +12,7 @@ CEscenario :: CEscenario() {
         void PintarMapa();
         void Pintarpiso();
         void Pintarobstaculo();
+
     }
 }
 
@@ -149,46 +150,49 @@ void CEscenario :: actualizarpantalla(int a, int b)
    // a= (a/52) +2;
    // b= (b/37)+1;
 
+    a= (a/54)+1;
+if ( 594<=b) b= 400;
+if (304<=b && b <= 474)    b= (b/38)+2;
+else b= (b/38)+1;
 
-     a= (a/54)+1;
 
 
-    b= (b/38)+1;
 
 
-    int x=0,y=0;
+
+
     for (int i = 0; i < filas; i++) {
         for (int j = 0; j < columnas; j++) {
 
             if (0 < a && 0 < b) {
-                if ((matriz[b][a + 1] == 3)) {
-                    matriz[b][a + 1] = 2;
+                if (a<16 && b < 14) {
+                    if ((matriz[b][a + 1] == 3)) {
+                        matriz[b][a + 1] = 2;
+
+                    }
+
+                    if ((matriz[b][a - 1] == 3)) {
+                        matriz[b][a - 1] = 2;
+
+                    }
+
+                    if ((matriz[b + 1][a] == 3)) {
+                        matriz[b + 1][a] = 2;
+
+                    }
+                    if ((matriz[b - 1][a] == 3)) {
+                        matriz[b - 1][a] = 2;
+
+                    }
 
                 }
 
-                if ((matriz[b][a - 1] == 3)) {
-                    matriz[b][a - 1] = 2;
-
-                }
-
-                if ((matriz[b + 1][a] == 3)) {
-                    matriz[b + 1][a] = 2;
-
-                }
-                if ((matriz[b - 1][a] == 3)) {
-                    matriz[b - 1][a] = 2;
-
-                }
-
-
-                x += 50;
 
 
             }
-            x = 0;
-            y += 43;
+
         }
     }
 
-    cout<<"posicion a "<<a<<"posicion b "<<b<<endl;
+    //cout<<"posicion a "<<a<<"posicion b "<<b<<endl;
 }

@@ -8,7 +8,9 @@
 #include "CEscenario.h"
 #include"funciones.h"
 #include"CBomba.h"
-class CBomberman {
+
+
+class CBomberman  {
 private:
     RenderWindow *mapa;
     Texture Bomber;
@@ -31,24 +33,31 @@ public:
     RectangleShape rectangle;
     RectangleShape rectangleA;
     Sprite Bomba;
-  CBomberman( RenderWindow *_mapa, int x, int y,int **&matriz);//posicion inicial;
-  ~CBomberman(){};
-  void dibujarBomberman();
+    CBomberman(){};
+    CBomberman( RenderWindow *_mapa, int x, int y,int **&matriz);
+
+
+
+    virtual ~CBomberman(){};
+
+
+
+   void dibujarBomberman();
   void moverBombermanDerecha( );
-    void moverBombermanIzquierda( );
-    void moverBombermaArriba();
-    void moverBombermanAbajo();
+   void moverBombermanIzquierda( );
+   void moverBombermaArriba();
+ void moverBombermanAbajo();
   void setPosx(int x){ this->x=x;}
   int getPosx(){return x;}
   int getPosy(){return y;}
-  bool validarmovimientovertical();
-   void validarmovimientohorizontal();
-   void setcerodx();
-   void hacermatriz();
-   void ponerbomba();
-   void validarpared();
-    void  tiempo1();
-    void destruirBomba();
+   bool validarmovimientovertical();
+  void validarmovimientohorizontal();
+  void setcerodx();
+  void hacermatriz();
+  void ponerbomba();
+  void validarpared();
+  void  tiempo1();
+  void destruirBomba();
 
 
 

@@ -867,8 +867,18 @@ CEscenario.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.h
 CBomberman.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.h
+CEnemigos.h
+C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEnemigos.h
+
+C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEnemigos.h
+CPersonajes.h
+C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CPersonajes.h
 
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEscenario.h
+funciones.h
+C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/funciones.h
+
+C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CPersonajes.h
 funciones.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/funciones.h
 
@@ -891,6 +901,8 @@ SFML/System/Clock.hpp
 -
 SFML/Window/Export.hpp
 -
+cmath
+-
 
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/main.cpp
 iostream
@@ -903,4 +915,6 @@ CBomberman.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomberman.h
 CBomba.h
 C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CBomba.h
+CEnemigos.h
+C:/Users/Zero/CLionProjects/Proyecto Final Bomberman/CEnemigos.h
 

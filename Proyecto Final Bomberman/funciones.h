@@ -14,6 +14,7 @@
 #include <SFML/audio.hpp>
 #include <SFML/System/Clock.hpp>
 #include <SFML/Window/Export.hpp>
+#include <cmath>
 
 
 using namespace std;

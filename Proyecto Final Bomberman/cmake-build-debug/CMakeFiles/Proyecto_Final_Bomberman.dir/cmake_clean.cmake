@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto_Final_Bomberman.dir/CControlmapa.cpp.obj"
   "CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj"
   "CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.obj"
+  "CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj"
+  "CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj"
   "Proyecto_Final_Bomberman.pdb"
   "Proyecto_Final_Bomberman.exe"
   "Proyecto_Final_Bomberman.exe.manifest"

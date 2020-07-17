@@ -203,6 +203,33 @@ CControlmapa.cpp.s:
 	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CControlmapa.cpp.s
 .PHONY : CControlmapa.cpp.s
 
+CEnemigos.obj: CEnemigos.cpp.obj
+
+.PHONY : CEnemigos.obj
+
+# target to build an object file
+CEnemigos.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj
+.PHONY : CEnemigos.cpp.obj
+
+CEnemigos.i: CEnemigos.cpp.i
+
+.PHONY : CEnemigos.i
+
+# target to preprocess a source file
+CEnemigos.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.i
+.PHONY : CEnemigos.cpp.i
+
+CEnemigos.s: CEnemigos.cpp.s
+
+.PHONY : CEnemigos.s
+
+# target to generate assembly for a file
+CEnemigos.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.s
+.PHONY : CEnemigos.cpp.s
+
 CEscenario.obj: CEscenario.cpp.obj
 
 .PHONY : CEscenario.obj
@@ -229,6 +256,33 @@ CEscenario.s: CEscenario.cpp.s
 CEscenario.cpp.s:
 	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CEscenario.cpp.s
 .PHONY : CEscenario.cpp.s
+
+CPersonajes.obj: CPersonajes.cpp.obj
+
+.PHONY : CPersonajes.obj
+
+# target to build an object file
+CPersonajes.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj
+.PHONY : CPersonajes.cpp.obj
+
+CPersonajes.i: CPersonajes.cpp.i
+
+.PHONY : CPersonajes.i
+
+# target to preprocess a source file
+CPersonajes.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.i
+.PHONY : CPersonajes.cpp.i
+
+CPersonajes.s: CPersonajes.cpp.s
+
+.PHONY : CPersonajes.s
+
+# target to generate assembly for a file
+CPersonajes.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto_Final_Bomberman.dir\build.make CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.s
+.PHONY : CPersonajes.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -275,9 +329,15 @@ help:
 	@echo ... CControlmapa.obj
 	@echo ... CControlmapa.i
 	@echo ... CControlmapa.s
+	@echo ... CEnemigos.obj
+	@echo ... CEnemigos.i
+	@echo ... CEnemigos.s
 	@echo ... CEscenario.obj
 	@echo ... CEscenario.i
 	@echo ... CEscenario.s
+	@echo ... CPersonajes.obj
+	@echo ... CPersonajes.i
+	@echo ... CPersonajes.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -126,13 +126,43 @@ CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\CBomba.cpp" -o CMakeFiles\Proyecto_Final_Bomberman.dir\CBomba.cpp.s
 
+CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj: CMakeFiles/Proyecto_Final_Bomberman.dir/flags.make
+CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj: CMakeFiles/Proyecto_Final_Bomberman.dir/includes_CXX.rsp
+CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj: ../CEnemigos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Proyecto_Final_Bomberman.dir\CEnemigos.cpp.obj -c "C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\CEnemigos.cpp"
+
+CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\CEnemigos.cpp" > CMakeFiles\Proyecto_Final_Bomberman.dir\CEnemigos.cpp.i
+
+CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\CEnemigos.cpp" -o CMakeFiles\Proyecto_Final_Bomberman.dir\CEnemigos.cpp.s
+
+CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj: CMakeFiles/Proyecto_Final_Bomberman.dir/flags.make
+CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj: CMakeFiles/Proyecto_Final_Bomberman.dir/includes_CXX.rsp
+CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj: ../CPersonajes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Proyecto_Final_Bomberman.dir\CPersonajes.cpp.obj -c "C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\CPersonajes.cpp"
+
+CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\CPersonajes.cpp" > CMakeFiles\Proyecto_Final_Bomberman.dir\CPersonajes.cpp.i
+
+CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\CPersonajes.cpp" -o CMakeFiles\Proyecto_Final_Bomberman.dir\CPersonajes.cpp.s
+
 # Object files for target Proyecto_Final_Bomberman
 Proyecto_Final_Bomberman_OBJECTS = \
 "CMakeFiles/Proyecto_Final_Bomberman.dir/main.cpp.obj" \
 "CMakeFiles/Proyecto_Final_Bomberman.dir/CEscenario.cpp.obj" \
 "CMakeFiles/Proyecto_Final_Bomberman.dir/CControlmapa.cpp.obj" \
 "CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj" \
-"CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.obj"
+"CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.obj" \
+"CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj" \
+"CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj"
 
 # External object files for target Proyecto_Final_Bomberman
 Proyecto_Final_Bomberman_EXTERNAL_OBJECTS =
@@ -142,6 +172,8 @@ Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/CEscenario
 Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/CControlmapa.cpp.obj
 Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/CBomberman.cpp.obj
 Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/CBomba.cpp.obj
+Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/CEnemigos.cpp.obj
+Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/CPersonajes.cpp.obj
 Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/build.make
 Proyecto_Final_Bomberman.exe: C:/Program\ Files\ (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/mingw32/lib/libsfml-graphics-d.a
 Proyecto_Final_Bomberman.exe: C:/Program\ Files\ (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/mingw32/lib/libsfml-network-d.a
@@ -151,7 +183,7 @@ Proyecto_Final_Bomberman.exe: C:/Program\ Files\ (x86)/mingw-w64/i686-8.1.0-posi
 Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/linklibs.rsp
 Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/objects1.rsp
 Proyecto_Final_Bomberman.exe: CMakeFiles/Proyecto_Final_Bomberman.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Proyecto_Final_Bomberman.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Zero\CLionProjects\Proyecto Final Bomberman\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Proyecto_Final_Bomberman.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Proyecto_Final_Bomberman.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
